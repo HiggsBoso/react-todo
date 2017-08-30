@@ -12,7 +12,7 @@ describe('TodoSearch', () => {
   });
 
   it('should dispatch SET_SEARCH_TEXT on input change', () => {
-    var searchText = 'Macbook';
+    var searchText = 'Something';
     var action = {
       type: 'SET_SEARCH_TEXT',
       searchText
