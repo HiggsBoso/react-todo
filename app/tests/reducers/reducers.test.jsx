@@ -45,10 +45,6 @@ describe('Reducers', () => {
     });
 
     it('should toggle todo', () => {
-      var action = {
-        type: 'TOGGLE_TODO',
-        id: 42
-      };
       var todos = [
         {
           id: 42,
@@ -58,6 +54,10 @@ describe('Reducers', () => {
           completedAt: undefined
         }
       ];
+      var action = {
+        type: 'TOGGLE_TODO',
+        id: 42
+      };
 
       var res = reducers.todosReducer(df(todos), df(action));
       expect(res[0].completed).toBe(true);
