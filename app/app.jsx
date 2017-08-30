@@ -12,11 +12,6 @@ store.subscribe(() => {
   console.log('New state', store.getState());
 });
 
-store.dispatch(actions.addTodo('Do something'));
-store.dispatch(actions.setSearchText('Some text'));
-store.dispatch(actions.toggleShowCompleted());
-
-
 // Load foundation
 $(document).foundation();
 
